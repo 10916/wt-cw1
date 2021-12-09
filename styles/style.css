@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans:wght@300&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --main-text-color: #fff;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .................................................. */
+/* .................... HEADER .................... */
+/* .................................................. */
+
+/* ............... HEADERTEXT ............... */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5em 0;
+    background-color: black;
+}
+
+a:hover {
+    color: rgb(21, 117, 34);
+}
+
+.header-text,
+.header-nav-item,
+.header-link-item {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.header-nav-item {
+    margin-right: 2em;
+}
+
+/* .................................................. */
+/* .................... SUPERSECTION .................... */
+/* .................................................. */
+
+section {
+    scroll-behavior: smooth;
+    height: 45em;
+}
+
+.section-super {
+    position: relative;
+}
+
+.section-super-image-item {
+    width: 100%;
+    height: 45em;
+    position: relative;
+}
+
+.section-super-text {
+    color: var(--main-text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section-super-text2 {
+    font-size: 11px;
+}
+
+/* .................................................. */
+/* .................... COLUMNSECTION .................... */
+/* .................................................. */
+
+.section-column,
+.section-row {
+    height: min-content;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section-column-text,
+.section-row-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.section-column-list,
+.section-row-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    object-fit: fill;
+}
+
+.section-column-item,
+.section-row-item {
+    position: relative;
+}
+
+.section-column-image,
+.section-row-image {
+    width: 100%;
+    max-width: 100%;
+    border: solid 1px var(--main-text-color);
+    opacity: 1;
+}  
+
+.section-column-text2,
+.section-row-text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.section-row-text2-description {
+    font-weight: normal;
+}
+
+.section-column-item:hover 
+.section-column-image {
+    opacity: 0.1;
+}
+
+.section-row-item:hover .section-row-image {
+    opacity: 0.1;
+}
+
+.section-column-item:hover .section-column-text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+
+.section-row-item:hover .section-row-text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+/* .................................................. */
+/* .................... FOOTER .................... */
+/* .................................................. */
+
+.footer {
+    background-color: black;
+    color: var(--main-text-color);
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+}
+
+.footer-text {
+    font-size: 13px;
+    align-items: center;
+}
+
+.footer-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-input-name,
+.footer-input-email,
+.footer-input-button {
+    border-radius: 12px;
+    
+}
+
+.footer-input-button {
+    width: 3em;
+    height: 1.5em;
+}
+
+.footer-input-name, 
+.footer-input-email {
+    border-radius: 12px;
+    width: 10em;
+}
+
+.footer-input-button {
+    width: 5em;
+}
+
+/* .................... STUDENTS PAGE CODE .................... */
+
+.section-columnf {
+    height: min-content;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* .................... STUDENT PAGE CODE .................... */
+
+.column-list {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: min-content;
+    height: 54em;
+}
+
+.column-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-text {
+    margin-left: 2em;
+}
+
+.column-text1 {
+    margin-top: 2em;
+}
+
+.column-text2,
+.column-text3 {
+    margin-top: 1em;
+}
+
+ul {
+    display: list-item;
+    list-style-type: circle;
+    margin-left: 2em;
+}
+
+.column-text1,
+.column-text2,
+.column-text3 {
+    display: list-item;
+    list-style-type: disc;
+}
+
+/* .................... FORM PAGE CODE .................... */
+
+.footer-inputf {
+    margin-top: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-input-namef,
+.footer-input-emailf,
+.footer-input-buttonf {
+    width: 15em;
+    height: 5em;
+    border-radius: 24px;    
+}
+
+.section-map,
+.section-table {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table, th, td {
+    border:1px solid black;
+    align-self: center;
+}
+
+
+
