@@ -41,6 +41,12 @@ a:hover {
     margin-right: 2em;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-nav-item {
+        margin-right: 10px;
+    }
+}
+
 /* .................................................. */
 /* .................... SUPERSECTION .................... */
 /* .................................................. */
@@ -175,6 +181,12 @@ section {
 .footer-text {
     font-size: 13px;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-text {
+        margin-left: 15px;
+    }
 }
 
 .footer-input {
